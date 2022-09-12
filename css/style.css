@@ -8,7 +8,7 @@
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
-  border: 2px dotted grey;
+  border: 5px dotted grey;
 }
 
 #primapagina{
@@ -32,6 +32,7 @@
   align-items: center;
   text-align: center;
   border: 5px dotted red;
+  /* ALTEZZA DA TOGLIERE */
   height: 545px;
 }
 
@@ -40,9 +41,30 @@
 }
 
 section:nth-child(even){
-  background-color: white;
   /* ALTEZZA DA TOGLIERE */
   height: 1000px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section:nth-child(even) .imgsx{
+  display: flex;
+  justify-content: space-between;
+}
+
+section:nth-child(even) .text-content{
+  border: 5px dotted green;
+  padding-left: 20%;
+}
+
+section:nth-child(even) .img{
+  /* DIMENSIONI DA TOGLIERE */
+  width: 670px;
+  height: 400px;
+  flex-shrink: 0;
+  background-color: rgba(0, 0, 255, .2);
 }
 
 section:nth-child(odd){
