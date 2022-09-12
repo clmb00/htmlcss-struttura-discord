@@ -71,14 +71,9 @@ section .img{
   background-color: rgba(0, 0, 255, .2);
 }
 
-section:nth-child(even) .text-content{
+section .text-content{
   border: 5px dotted green;
-  padding-left: 20%;
-}
-
-section:nth-child(odd) .text-content{
-  border: 5px dotted green;
-  padding-right: 20%;
+  flex-basis: 320px;
 }
 
 section:last-of-type{
@@ -102,6 +97,7 @@ section .imglarge{
 
 footer{
   background-color: #23272A;
+  color: white;
   /* ALTEZZA DA TOGLIERE */
   height: 625px;
 }
