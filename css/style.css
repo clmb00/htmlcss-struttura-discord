@@ -27,16 +27,16 @@
 
 #primapagina .jumbotron{
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
   border: 5px dotted red;
   height: 100%;
 }
 
-#primapagina .jumbotron .riquadro{
-  flex-basis: 70%;
-  border: 5px dotted yellow;
-  text-align: center;
+#primapagina .jumbotron p{
+  width: 70%;
 }
 
 section:nth-child(even){
