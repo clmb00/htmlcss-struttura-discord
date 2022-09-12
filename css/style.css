@@ -12,20 +12,24 @@
 
 #primapagina{
   background-color: cadetblue;
+  /* ALTEZZA DA TOGLIERE */
   height: 625px;
 }
 
 section:nth-child(even){
-  height: 700px;
   background-color: white;
+  /* ALTEZZA DA TOGLIERE */
+  height: 1000px;
 }
 
 section:nth-child(odd){
-  height: 700px;
   background-color: lightgrey;
+  /* ALTEZZA DA TOGLIERE */
+  height: 1000px;
 }
 
 footer{
-  height: 625px;
   background-color: #23272A;
+  /* ALTEZZA DA TOGLIERE */
+  height: 625px;
 }
