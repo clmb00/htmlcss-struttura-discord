@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 
+/* body trebuchet */
+
 .container{
   width: 70%;
   max-width: 1200px;
@@ -11,59 +13,59 @@
   border: 5px dotted grey;
 }
 
-#primapagina{
-  background-color: cadetblue;
-  /* ALTEZZA DA TOGLIERE */
-  height: 625px;
+header{
+  background-color: lightskyblue;
 }
 
-#primapagina header{
+header .container{
+  height: 80px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   border: 5px dotted orange;
 }
 
-#primapagina .jumbotron{
+.jumbotron{
+  background-color: cadetblue;
+  /* ALTEZZA DA TOGLIERE */
+  height: 545px;
+  /* QUESTA ALTEZZA CI POTREBBE STARE */
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.jumbotron .content{
   border: 5px dotted red;
   /* ALTEZZA DA TOGLIERE */
-  height: 545px;
+  max-width: 800px;  
 }
 
-#primapagina .jumbotron p{
-  width: 70%;
-}
-
-section.scheda{
+main section{
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-section:nth-child(even){
+main section:nth-child(even){
   /* ALTEZZA DA TOGLIERE */
   height: 1000px;
-  background-color: white;
+  /* background-color: white; */
 }
 
-section:nth-child(odd){
+main section:nth-child(odd){
   background-color: lightgrey;
   /* ALTEZZA DA TOGLIERE */
   height: 1000px;
 }
 
-section.scheda .container{
+main section.scheda .container{
   display: flex;
   justify-content: space-between;
 }
 
-section .img{
+main section .img{
   /* DIMENSIONI DA TOGLIERE */
   width: 670px;
   height: 400px;
@@ -71,23 +73,23 @@ section .img{
   background-color: rgba(0, 0, 255, .2);
 }
 
-section .text-content{
+main section .text-content{
   border: 5px dotted green;
   flex-basis: 320px;
 }
 
-section:last-of-type{
-  display: flex;
+main section:last-of-type{
+  /* display: flex; */
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
 }
 
-section:last-of-type .container{
+main section:last-of-type .container{
   text-align: center;
 }
 
-section .imglarge{
+main section .imglarge{
   /* DIMENSIONI DA TOGLIERE */
   width: 1200px;
   height: 580px;
