@@ -46,26 +46,21 @@ main section{
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 1000px;
 }
 
 main section:nth-child(even){
-  /* ALTEZZA DA TOGLIERE */
-  height: 1000px;
-  /* background-color: white; */
-}
-
-main section:nth-child(odd){
   background-color: lightgrey;
   /* ALTEZZA DA TOGLIERE */
-  height: 1000px;
+  /* height: 1000px; */
 }
 
-main section.scheda .container{
+main section:not(:last-of-type) .container{
   display: flex;
   justify-content: space-between;
 }
 
-main section .img{
+main section:not(:last-of-type) .img{
   /* DIMENSIONI DA TOGLIERE */
   width: 670px;
   height: 400px;
@@ -73,7 +68,7 @@ main section .img{
   background-color: rgba(0, 0, 255, .2);
 }
 
-main section .text-content{
+main section:not(:last-of-type) .text-content{
   border: 5px dotted green;
   flex-basis: 320px;
 }
@@ -89,7 +84,7 @@ main section:last-of-type .container{
   text-align: center;
 }
 
-main section .imglarge{
+main section:last-of-type .imglarge{
   /* DIMENSIONI DA TOGLIERE */
   width: 1200px;
   height: 580px;
